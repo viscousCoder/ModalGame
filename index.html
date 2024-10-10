@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gallery-page">
+        <header>
+            <h1 class="mainHeading">Welcome to the Game Gallery 🕹️</h1>
+        </header>
+        <main>
+            <section class="parentBox">
+                <!-- <a href="Number_Game/index.html"> -->
+                <section class="box" id="game1">
+                    <button class="btnGuess">
+
+                        <div class="photo">
+                            <img src="guess.png" alt="Guess the number" class="guessImg">
+                        </div>
+                        <div class="content">
+                            <h3 class="subHeading">Guess the number game</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </button>
+                </section>
+                <!-- </a> -->
+                <!-- <a href="Tic_tac/index.html"> -->
+                <section class="box" id="game2">
+                    <button class="btnGuess">
+                        <div class="photo">
+                            <img src="tic.png" alt="Tic Tak Toe" class="guessImg">
+                        </div>
+                        <div class="content">
+                            <h3 class="subHeading">Tic Tac Toe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+
+                        </div>
+                    </button>
+                </section>
+                <!-- </a> -->
+                <!-- <a href="Ball_Game/index.html"> -->
+                <section class="box" id="game3">
+                    <button class="btnGuess">
+                        <div class="photo">
+                            <img src="ball.jpg" alt="Tic Tack" class="guessImg">
+                        </div>
+                        <div class="content">
+                            <h3 class="subHeading">Ball Stop</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </button>
+                </section>
+                <!-- </a> -->
+            </section>
+
+
+            <!-- Game 00 Guess Number -->
+            <div class="game-0 hidden">
+                <button class="close-modal  modal-button-0">&times;</button>
+                <div>
+                    <div class="guessheader">
+                        <h1 class="guessHeading">Guess My Number!</h1>
+                        <p class="between">(Between 1 and 20)</p>
+                        <button class="btn again">Again!</button>
+                        <div class="number">?</div>
+                    </div>
+                    <div class="guessmain">
+                        <section class="left">
+                            <input type="number" class="guess" />
+                            <button class="btn check">Check!</button>
+                        </section>
+                        <section class="right">
+                            <p class="message">Start guessing...</p>
+                            <p class="label-score">💯 Score: <span class="score">20</span></p>
+                            <p class="label-highscore">
+                                🥇 Highscore: <span class="highscore">0</span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game 01 Tic Tac Toe -->
+            <div class="game-1 hidden">
+                <button class="modal-button-1">&times;</button>
+                <div>
+                    <div class="container">
+                        <h1 class="ticHeading">Tic Tac Toe</h1>
+                        <div class="row">
+                            <div onclick="handleClick(this)" id="0" class="col"></div>
+                            <div onclick="handleClick(this)" id="1" class="col"></div>
+                            <div onclick="handleClick(this)" id="2" class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div onclick="handleClick(this)" id="3" class="col"></div>
+                            <div onclick="handleClick(this)" id="4" class="col"></div>
+                            <div onclick="handleClick(this)" id="5" class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div onclick="handleClick(this)" id="6" class="col"></div>
+                            <div onclick="handleClick(this)" id="7" class="col"></div>
+                            <div onclick="handleClick(this)" id="8" class="col"></div>
+                        </div>
+                        <div class="turn-indicator">X's turn</div>
+                        <div class="winner">X winner</div>
+                        <button id="restart-btn">Restart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game 02 Floating ball -->
+            <div class="game-2 hidden">
+                <button class="modal-button-2">&times;</button>
+                <div>
+                    <div class="ballContainer">
+                        <div id="ball"></div>
+                        <!-- <div class="ballBtn"> -->
+                        <button id="actionBtn">Play</button>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="overlay hidden"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
