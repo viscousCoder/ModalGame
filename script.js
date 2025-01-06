@@ -1,6 +1,6 @@
 "use strict";
 
-let boxNum = document.querySelectorAll(".box");
+let boxNum = document.querySelectorAll(".box1");
 const overlay = document.querySelector(".overlay");
 const closeBtn = document.querySelector(".close-modal");
 let closeModalBtn;
@@ -205,4 +205,16 @@ btn.addEventListener("click", function () {
   turnIndicator.classList.remove("hidden");
   winner.classList.add("hidden");
   turnIndicator.textContent = "X's turn";
+});
+
+// Add click event listener to the button
+document.querySelector(".hangman").addEventListener("click", function () {
+  window.location.href = "https://hangmanpro.netlify.app/";
+});
+
+document.querySelector(".calculator").addEventListener("click", function () {
+  window.location.href = "https://cal-calculator01.netlify.app/";
+});
+document.querySelector(".alarm").addEventListener("click", function () {
+  window.location.href = "https://alaram01.netlify.app/";
 });
